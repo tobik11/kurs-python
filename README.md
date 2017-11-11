@@ -98,36 +98,112 @@ import random
 rand_num = random.randrange(0,100)
 while(rand_num != 13):
 	print(rand_num)
-rand_num = random.randrange(0,100)
-	i = 0
+	rand_num = random.randrange(0,100)
+
+
+i = 0
 while(i < 98) 
-i = rand_num = random.randrange(0,100)
+	i = rand_num = random.randrange(0,100)
 		if i = 19:
 			break
+		elif i%3 = 0
+			continue
 
 ```
 
 7. funkcje
 ```python
-def my_function(a, b):
+def add(a, b):
 	c = a*b
 	return c
+	
+print("the returned value = ", add(5, 9))
+
+
+
+def fun(a, b, c):
+    d = (a + b) / c
+    e = a + b / c   # kolejnosc dzialan ma znaczenie
+    return d, e
+
+val1, val2 = fun(5, 6, 7)
+print("d = ", val1, "  e = ", val2)
 
 ```
 
-8. wejście / wyjście
+8. Interakcja z użytkownikiem, manipulacje na łańcuchach
+```python
+import sys
+text_typed = sys.stdin.readLine()
+long_string = 'witam, nazywam sie kret'
+print(long_string[9:12])
+print(long_string[-4:])
+long_string.capitalize()
+long_string.find('sie')
+long_string.replace(‘kret’, ‘krokiet’)	
+long_string.strip()	
+long_string.split()
+s = 'autostrada'
+s.isalpha()	
+s.isalnum()	
+
+```
+9. Obsługa plików:
+```python
+my_file = open(”text.txt”, ”wb”)	# ”ab+”  reads and appends a file ”r+” reading and writing
+my_file.mode()   .name()
+.write(bytes(”to jest text zapisywany do pliku\n”, ‘UTF-8’))	
+.close()	.read()
+
+import os
+os.remove(”text.txt”)
+```
+10. Klasy
+```python
+class Animal:
+	__name = ””
+	__height = 0
+	__tail = None
+	
+	Def __init__(self, name, height, tail):
+		self.__name = name
+		self.height = height
+		self.tail = tail
+	
+	def set_name(self, name):
+		self.__name = name
+
+	def get_name(self):
+		return self.__name
+	
+	def toString(self):
+		return „{} is {} cm heigh”.format(self.__name, self.__height)
+
+cat = Animal(‘bajcur’, 25, ‘long one’)
+print(cat.toString())
+
+```
+11. Dziedziczenie
+```python
+class Dog(Animal):
+__owner = ””
+def __init__(self, name, height, tail, owner):
+	self.__owner = owner
+	super(Dog, self).__init__(name, height, tail)
+# dodać przykład na overwriting funkcji
+def multi_sound(self, how_many = None):
+	if how_many is None:
+		print(self.get_sound())
+	else:
+		print(self.get_sound() * how_many)
+```
+
+12. Dziedziczenie
 ```python
 
 ```
-9. wejście / wyjście
-```python
 
-```
-10. wejście / wyjście
-```python
-
-```
-11. wejście / wyjście
+13. Dziedziczenie
 ```python
 
 ```
