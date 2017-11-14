@@ -158,12 +158,23 @@ my_file.mode()   .name()
 import os
 os.remove(”text.txt”)
 ```
-10. tajemnica
+10. interpolacja stringów
 ```python
 name = 'Grzegorz'
 ageG = 23
 print('My name is {name}, i am {age}'.format(name=name, age=ageG))
 print('Once again: I am {}'.format(name))
+
+print('{:>10}'.format('test'))
+'{:10}'.format('test')
+'{:^6}'.format('zip')
+'{:06.2f}'.format(3.141592653589793)
+
+data = {'first': 'Hodor', 'last': 'Hodor!'}
+'{first} {last}'.format(**data)
+
+data = [4, 8, 15, 16, 23, 42]
+'{d[4]} {d[5]}'.format(d=data)
 ```
 
 11. Klasy
