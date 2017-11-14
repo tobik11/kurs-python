@@ -152,13 +152,21 @@ s.isalnum()
 ```python
 my_file = open(”text.txt”, ”wb”)	# ”ab+”  reads and appends a file ”r+” reading and writing
 my_file.mode()   .name()
-.write(bytes(”to jest text zapisywany do pliku\n”, ‘UTF-8’))	
+.write(bytes('to jest text zapisywany do pliku\n', ‘UTF-8’))	
 .close()	.read()
 
 import os
 os.remove(”text.txt”)
 ```
-10. Klasy
+10. tajemnica
+```python
+name = 'Grzegorz'
+ageG = 23
+print('My name is {name}, i am {age}'.format(name=name, age=ageG))
+print('Once again: I am {}'.format(name))
+```
+
+11. Klasy
 ```python
 class Animal:
 	__name = ””
@@ -183,7 +191,7 @@ cat = Animal(‘bajcur’, 25, ‘long one’)
 print(cat.toString())
 
 ```
-11. Dziedziczenie
+12. Dziedziczenie
 ```python
 class Dog(Animal):
 __owner = ””
@@ -198,12 +206,12 @@ def multi_sound(self, how_many = None):
 		print(self.get_sound() * how_many)
 ```
 
-12. Dziedziczenie
+13. tajemnica
 ```python
 
 ```
 
-13. Dziedziczenie
+14. tez
 ```python
 
 ```
