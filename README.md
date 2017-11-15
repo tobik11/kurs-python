@@ -11,36 +11,53 @@ kurs podstaw języka python
 - pycharm [instrukcja instalacji](https://www.youtube.com/watch?v=QzcaEELafkE)
 
 
-## materiały pomocnicze do kursu
-1. używanie zmiennych
+## Przykłady kodu do kursu
+1. Liczby
 ```python
-a = 55
-b = 67
-c = a + b
-d = a/b
-e = a//b
+a = 12
+b = 5
+c = a + b  
+d = a / b  # d = 2
 
-nick_name = "homerman"
-nock_name2 = "hunger"
-merged_nick_name = nick_name + nick_name2
+e = 12.0
+f = float(5)
+g = e / f
+h = e // f
 ```
-2. komentarze
+
+2. Tekst
+```python
+a = 'asdf'
+b = "Ain't no rest for the wicked"
+
+nick_name = "Mel"
+nick_name2 = "Avio"
+merged_nick_name = nick_name + nick_name2
+
+multiline_text = '''Trawo, trawo do kolan!
+Podnieś mi się do czoła,
+Żeby myślom nie było
+Ani mnie, ani pola.'''
+```
+
+3. Komentarze
 ```python
 # to jest komentarz jednoliniowy
 ''' to jest komentarz
     wieloliniowy
     bardzo dlugi'''
 ```
-3. input / output (wejście / wyjście)
+
+4. Wejście / wyjście
 ```python
-print("lubie bigos")
-my_string = autko
-print ("to jest", my_string)
+print "lubie bigos" 
+my_string = "autko"
+print  "to jest", my_string
 
 age = input("podaj swoj wiek")
 ```
 
-4. listy / tuple (tuplety)
+5. Kolekcje
 - listy
 ```python
 grocery_list = ['jajka', 'pomidory', 'mleko', litry]
@@ -48,36 +65,42 @@ grocery_list[3] += 5
 grocery_list[0] = 'marchew'
 other_events = ['wstac', 'zjesc', 'kodzic']
 to_do_list = [grocery_list, other_events]
-print(to_do_list[1][2])
+print to_do_list[1][2]
 other_events.append('spac')
 other_events.insert(1, 'umyc żeby')
 other_events.remove('zjesc')
 other_events.sort()
 other_events.reverse()
 del other_events[2]
-print(len(to_do_list))
+print len(to_do_list)
 ```
-- tuplety
+- indeksowanie
+```python
+numbers = [3, 1, 4, 1, 5]
+first = numbers[0]
+last = numbers[-1]
+some = numbers[1:3]
+```
+- tuplety - niezmienna kolekcja
 ```python
 my_tuple = (1,2,3,4,5,6,7)
 my_list = list(my_tuple)
 my_tuple = tuple(my_list)
 length = len(my_tuple)  
 minimal = min(my_tuple)
-
+# nie da się zrobić!!! my_tuple[3] = 10
 ```
-5. Dictionaries (słowniki)
+- słowniki (dictionaries) - kolekcje z kluczem
 ```python
 nick_names = {'maly' : 'Dominik Jasimski', 'szybki': 'Pawel Domoracki'}
 print(nick_names['szybki'])
 del nick_names['szybki']
-nick_names['szybki'] = 'Tomasz Staniszewski'
+nick_names['szybki'] = 'Bill'
 nick_names.get('szybki')
 nick_names.values()
 nick_names.keys()
 
 ```
-
 6. pętle, instrukcje warunkowe
 ```python
 age = input("podaj swoj wiek")
